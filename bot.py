@@ -12,7 +12,6 @@ from discord.user import Profile
 from easy_pil import Editor, Canvas, font, load_image_async, Font
 import random
 import string
-from discord_slash import SlashCommand
 import locale
 import time
 from discord_buttons_plugin import *
@@ -27,7 +26,6 @@ locale.setlocale(locale.LC_TIME,'')
 intents = discord.Intents().all()
 lvl = [50, 150, 300, 500, 750, 1000]
 bot = commands.Bot(command_prefix="sinix/", intents=intents, help_command=None)
-slash = SlashCommand(bot, sync_commands= True)
 buttons = ButtonsClient(bot)
 music = DiscordUtils.Music()
 
